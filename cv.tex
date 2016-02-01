@@ -1,0 +1,252 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Graduate Curriculum Vitae
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+%
+% Important note:
+% This template requires the res.cls file to be in the same directory as the
+% .tex file. The res.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[margin, 9pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+
+\usepackage[T1]{fontenc}
+\usepackage[sc]{mathpazo} % Use the great palatino font provided by the mathpazo package. Add osf for old style figures
+
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+\usepackage{color}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[T1]{fontenc}
+
+\setlength{\textwidth}{5.1in} % Text width of the document
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%----------------------------------------------------------------------------------------
+
+\moveleft.5\hoffset\centerline{\huge\bf Wenzhi Cui} % Your name at the top
+\vspace{-5pt}
+ 
+\moveleft\hoffset\vbox{\hrule width\resumewidth height .5pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
+ 
+%\moveleft.5\hoffset\centerline{UT Austin ECE}
+%\moveleft.5\hoffset\centerline{yzhu@utexas.edu}
+%\moveleft.5\hoffset\centerline{\color{blue}{\url{http://yuhaozhu.com/}}}
+
+\begin{minipage}{0.5\linewidth}
+  \flushleft
+  The University of Texas at Austin \\
+  Computer Science\\
+\end{minipage}
+\begin{minipage}{0.5\linewidth}
+  \flushright
+  \texttt{wc8348@cs.utexas.edu} \\
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+\begin{resume}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\vspace*{-5pt}
+\section{RESEARCH\\ INTERESTS} 
+
+I enjoy research in hardware and software support for future computer systems. FIXME: Need more.
+ 
+%\section{OBJECTIVE}
+%Apply for summer internship 2015\\
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+%\vspace*{-5pt}
+\section{EDUCATION}
+
+\textbf{The University of Texas at Austin} \hfill\textit{2014-present}\\
+Ph.D. student, Computer Sciense\\
+Advisor: \href{http://3nity.io/~vj/}{Vijay Janapa Reddi}\\
+
+\vspace*{-5pt}
+\textbf{Nanjing University, Nanjing, China} \hfill\textit{2010-2014}\\
+B.S., Software Engineering
+
+%----------------------------------------------------------------------------------------
+%	HONOR SECTION
+%----------------------------------------------------------------------------------------
+ 
+\section{HONORS \&\\ RECOGNITIONS}
+
+\vspace*{-1pt}
+\begin{itemize}[leftmargin=*] \itemsep -4pt
+	\item UT Austin Microelectronics and Computer Development Fellowship, 2014-2017
+	\item Google Scholarship, 2013
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	SKILL SECTION
+%----------------------------------------------------------------------------------------
+ 
+\section{SKILLS}
+
+\vspace*{-1pt}
+\begin{itemize}[leftmargin=*] \itemsep -4pt
+	\item Programming Languages: C/C++, Java, Go, Assembly
+	\item Scripting Languages: Shell, Javascript, Python
+	\item Hardware Description Language: Verilog, Bluespec Verilog
+	\item System Software Development: Unix/Linux OS, Node.js, LLVM, Google V8
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+ 
+%\vspace*{-5pt}
+\section{PUBLICATIONS}
+
+{\large\textbf{Conference Papers}}
+
+\begin{itemize}[leftmargin=*] \itemsep 0pt
+%\vspace*{-5pt}
+	\item Wenzhi Cui, Chen Qian\\
+          \href{http://arxiv.org/pdf/1403.8065.pdf}{Scalable and Load-balanced Data Center Multicast}\\
+          \textit{Globecom 2015}
+
+	\item Wenzhi Cui, Chen Qian\\
+          \href{http://www.cs.uky.edu/~qian/papers/DiFS.pdf}{DiFS: Distributed Flow Scheduling for Adaptive Routing in Hierarchical Data Center Networks}\\
+          \textit{ANCS 2014}
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	SELECTED PROJECTS SECTION
+%---------------------------------------------------------------------------------------- 
+
+\section{SELECTED\\ PROJECTS}
+
+{\large\textbf{The University of Texas at Austin (\textit{Graduate})}}\\
+
+\vspace*{-7pt}
+{\large\textit{High-Performance Runtime Support}} \hfill\textit{8/2014-present}\\
+
+\vspace*{-7pt}
+Reducing Web Request Tails based on Event Dependence Analysis \hfill(Ongoing)\\
+\vspace*{-10pt}
+\begin{itemize}[leftmargin=*] \itemsep -3pt
+\vspace*{-5pt}
+	\item Conducted a thorough analysis on latency distribution of server-side request response time on Event Driven Web Application named Node.js
+	\item Performed Event Dependence Analysis to analyze the execution trace of event driven application and identified correlation between event queue delay and server-side latency 
+	\item (Future work) Demonstrate the power of Event Dependence Analysis by applying event dependence analysis to event loop scheduling and accelerating to reduce tail latency
+\end{itemize}
+
+\medskip
+Static Analysis on C/C++ Pointers Bounds Checking\\
+\vspace*{-10pt}
+\begin{itemize}[leftmargin=*] \itemsep -3pt
+\vspace*{-5pt}
+	\item Designed and Impelemented an analysis pass in LLVM to track C/C++ pointer bounds at compile time
+	\item Integrated static analysis with Softbound, a compile-time transformation for enforcing spatial safety of C/C++ pointers, to balance performance and coverage
+\end{itemize}
+
+\medskip
+Parallel Asychronous Recursive Copy on SSD\\
+\vspace*{-10pt}
+\begin{itemize}[leftmargin=*] \itemsep -3pt
+\vspace*{-5pt}
+	\item Characterized the performance of copy command of Linux Shell for large-volume directories on Solid State Drive
+	\item Implemented a prototype which can utilize Parallel Execution and Asynchronous IO and hence speed up recursive copy
+\end{itemize}
+
+\bigskip
+{\large\textbf{Nanjing University (\textit{Undergraduate})}}\\
+
+\vspace*{-7pt}
+DLX Instruction Set Prototype on FPGA \hfill(\textit{03/2013-08/2013})\\
+\vspace*{-10pt}
+\begin{itemize}[leftmargin=*] \itemsep -3pt
+\vspace*{-5pt}
+	\item Designed a multi-cycle DLX microprocessor using Verilog
+	\item Extended MMU and added circuit support for connecting keyboard and monitor
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	INTERN EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{INTERN\\ EXPERIENCE} 
+
+{\textbf{IBM Research Austin}} \hfill{Summer 2015}\\
+\vspace*{-10pt}
+\begin{itemize}[leftmargin=*] \itemsep -3pt
+\vspace*{-5pt}
+	\item Analyzed the latency distribution of web servers in data center
+	\item Proposed an end-host based load balancing scheme by offloading HTTP requests
+	\item Implemented a prototype in OpenVSwitch
+\end{itemize}
+
+\medskip
+{\textbf{University of Queensland}} \hfill{Winter 2012}\\
+\vspace*{-10pt}
+\begin{itemize}[leftmargin=*] \itemsep -3pt
+\vspace*{-5pt}
+	\item Studied the query optimizer of MongoDB database
+	\item Tweaked MongoDB Query Optimizer to achieve better performance 
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	TEACHING EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{TEACHING\\ EXPERIENCE} 
+
+{\large{Teaching Assistant}}\\
+\vspace*{-5pt}
+\begin{itemize}[leftmargin=*] \itemsep -2pt
+\vspace*{-5pt}
+	\item Upper Division, Programming Languages: Honor
+	\item Upper Division, Principles of Computer Systems
+	\item Upper Division, Computer Networks
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	COURSEWORK SECTION
+%----------------------------------------------------------------------------------------
+
+\section{COURSEWORK} 
+
+\vspace*{-2pt}
+\begin{itemize}[leftmargin=*] \itemsep -2pt
+	\item Computer Architecture (with Prof. Yale N. Patt)
+	\item Compilers (with Prof. Calvin Lin)
+	\item Advanced Operating Systems (with Prof. Emmett Witchel)
+	\item Algorithms: Techniques/Theory (with Prof. Vijaya Ramachandran)
+	\item Formal Verification and Semantics (with Prof. E. A. Emerson)
+	\item Natural Language Processing (with Prof. Raymond J. Mooney)
+	\item Program Verification (with Prof. Thomas Dillig)
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+
+\end{resume}
+\end{document}
