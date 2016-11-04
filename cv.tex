@@ -73,7 +73,7 @@
 \vspace*{-5pt}
 \section{RESEARCH\\ INTERESTS} 
 
-I am interested in building high-performance, energy-efficient computer systems. My current research focus is on developing advanced programming abstractions and runtime support for emerging hardware/software platforms, specifically focusing on Web technologies. 
+I am interested in building high-performance, energy-efficient computer systems. My current research focus is on developing advanced compiler and runtime support for emerging programming models and hardware platforms, specifically focusing on dataflow programming and event-driven programming. 
  
 %\section{OBJECTIVE}
 %Apply for summer internship 2015\\
@@ -113,10 +113,9 @@ B.S., Software Engineering
 
 \vspace*{-1pt}
 \begin{itemize}[leftmargin=*] \itemsep -4pt
-	\item Programming Languages: C/C++, Java, Go, Assembly
-	\item Scripting Languages: Shell, JavaScript, Python
+	\item Programming Languages: C/C++, Java, JavaScript, Python
 	\item Hardware Description Language: Verilog, Bluespec Verilog
-	\item System Software Development: Unix/Linux OS, Node.js, LLVM, Google V8
+	\item System Software Development: Unix/Linux OS, Node.js, LLVM, Coq
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
@@ -151,15 +150,26 @@ B.S., Software Engineering
 {\large\textit{High-Performance Runtime Support}} \hfill\textit{8/2014-present}\\
 
 \vspace*{-7pt}
-Reducing Web Request Tails based on Event Dependence Analysis \hfill(Ongoing)\\
+Compiler/Runtime Support for Dataflow Programming in Scalable Machine Learning \hfill(Ongoing)\\
 \vspace*{-10pt}
 \begin{itemize}[leftmargin=*] \itemsep -3pt
 \vspace*{-5pt}
-	\item Conducting a thorough analysis on latency distribution of server-side request response time on Event-Driven Web Application named Node.js
-	\item Developing novel analysis to analyze event-driven application execution on the basis of a new concept called the "Event Dependence Graph" (EDG) that is built from execution traces to identify the correlation between event queue delay and server-side latency 
-	\item (Future work) Demonstrate the power of Event Dependence Analysis (EDA), which is based on EDGs, to perform event-loop scheduling to reduce tail latency in server systems
+	\item Characterizing the hardware/software implications of the dataflow programming models used in scalable machine learning systems such as Tensorflow
+	\item (Future work) Developing modularized compiler and runtime optimization passes for scalable dataflow programming on hetergeneous hardware platform
 \end{itemize}
 
+\medskip
+\vspace*{-7pt}
+Deconstructing Tail Latencies with Event-Dependence Graphs in Managed Runtimes (Node.js)\\
+\vspace*{-10pt}
+\begin{itemize}[leftmargin=*] \itemsep -3pt
+\vspace*{-5pt}
+	\item Developed a program profiling technique called the "Event Dependence Graph" (EDG) to deconstruct the server response time of event-driven applications such as Node.js
+	\item Used EDG to characterize the tail latency of Node.js application and identified JavaScript garbage collector as a dominant root cause for the Node.js tail
+	\item Demonstrated how to alleviate the tail latency by applying frequency boosting during garbage collection and carefully tuning garbage collector parameters
+\end{itemize}
+
+\pagebreak
 \medskip
 Static Analysis on C/C++ Pointers Bounds Checking\\
 \vspace*{-10pt}
@@ -244,6 +254,7 @@ DLX Instruction Set Prototype on FPGA \hfill(\textit{03/2013-08/2013})\\
 	\item Formal Verification and Semantics (with Prof. E. A. Emerson)
 	\item Natural Language Processing (with Prof. Raymond J. Mooney)
 	\item Program Verification (with Prof. Thomas Dillig)
+	\item Programming Languages (with Prof. William Cook)
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
