@@ -73,10 +73,7 @@
 \vspace*{-5pt}
 \section{RESEARCH\\ INTERESTS} 
 
-I am interested in building high-performance, energy-efficient computer systems. My current research focus is on developing advanced compiler and runtime support for emerging programming models and hardware platforms, specifically focusing on dataflow programming and event-driven programming. 
- 
-%\section{OBJECTIVE}
-%Apply for summer internship 2015\\
+I am interested in building high-performance, energy-efficient computer systems. My past projects focus on developing advanced compiler and runtime support for emerging programming models and hardware platforms, such as GPGPU and Node.js.
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -86,12 +83,82 @@ I am interested in building high-performance, energy-efficient computer systems.
 \section{EDUCATION}
 
 \textbf{The University of Texas at Austin} \hfill\textit{2014-present}\\
-Ph.D. student, Computer Science\\
-Advisor: \href{http://3nity.io/~vj/}{Vijay Janapa Reddi}\\
+M.S. student, Computer Science\\
+Expected Graduation Date: 2018-05\\
 
 \vspace*{-5pt}
 \textbf{Nanjing University, Nanjing, China} \hfill\textit{2010-2014}\\
 B.S., Software Engineering
+
+%----------------------------------------------------------------------------------------
+%	SKILL SECTION
+%----------------------------------------------------------------------------------------
+ 
+\section{SKILLS}
+
+\vspace*{-1pt}
+\begin{itemize}[leftmargin=*] \itemsep -4pt
+	\item Programming Languages: C/C++, Cuda, Java, JavaScript, Python
+	\item System Software: LLVM, Node.js, Halide, Coq
+	\item Hardware Description Language: Verilog, Bluespec Verilog
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	INTERN EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{INTERN\\ EXPERIENCE}
+
+{\textbf{Google}} \hfill{Summer 2018}\\
+\vspace*{-10pt}
+\begin{itemize}[leftmargin=*] \itemsep -3pt
+\vspace*{-5pt}
+	\item Compiler Support for consumer hardware on mobile platform
+  \item Runtime Extension for Image Processing Applications in Halide
+\end{itemize} 
+
+\medskip
+{\textbf{IBM Research Austin}} \hfill{Summer 2015}\\
+\vspace*{-10pt}
+\begin{itemize}[leftmargin=*] \itemsep -3pt
+\vspace*{-5pt}
+	\item Analyzed the HTTP request latency distribution of web servers in data centers
+	\item Proposed an end-host based load balancing scheme by offloading HTTP requests
+	\item Implemented a prototype in OpenVSwitch
+\end{itemize}
+
+\medskip
+{\textbf{University of Queensland}} \hfill{Winter 2012}\\
+\vspace*{-10pt}
+\begin{itemize}[leftmargin=*] \itemsep -3pt
+\vspace*{-5pt}
+	\item Studied the query optimizer of MongoDB database
+	\item Tweaked MongoDB Query Optimizer to achieve better performance 
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+ 
+%\vspace*{-5pt}
+\section{PUBLICATIONS}
+
+{\large\textbf{Conference Papers}}
+
+\begin{itemize}[leftmargin=*] \itemsep 0pt
+%\vspace*{-5pt}
+  \item Nadav Chachmon, Daniel Richins, Robert Cohn, Magnus Christensson, Wenzhi Cui, Vijay Janapa Reddi
+          \href{http://3nity.io/~vj/downloads/publications/sae16ics.pdf}{Simulation and Analysis Engine for Scale-Out Workloads}\\
+          \textit{ICS 2016}
+
+	\item Wenzhi Cui, Chen Qian\\
+          \href{http://arxiv.org/pdf/1403.8065.pdf}{Scalable and Load-balanced Data Center Multicast}\\
+          \textit{Globecom 2015}
+
+	\item Wenzhi Cui, Chen Qian\\
+          \href{http://www.cs.uky.edu/~qian/papers/DiFS.pdf}{DiFS: Distributed Flow Scheduling for Adaptive Routing in Hierarchical Data Center Networks}\\
+          \textit{ANCS 2014}
+\end{itemize}
 
 %----------------------------------------------------------------------------------------
 %	HONOR SECTION
@@ -106,39 +173,6 @@ B.S., Software Engineering
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
-%	SKILL SECTION
-%----------------------------------------------------------------------------------------
- 
-\section{SKILLS}
-
-\vspace*{-1pt}
-\begin{itemize}[leftmargin=*] \itemsep -4pt
-	\item Programming Languages: C/C++, Java, JavaScript, Python
-	\item Hardware Description Language: Verilog, Bluespec Verilog
-	\item System Software Development: Unix/Linux OS, Node.js, LLVM, Coq
-\end{itemize}
-
-%----------------------------------------------------------------------------------------
-%	PUBLICATIONS SECTION
-%----------------------------------------------------------------------------------------
- 
-%\vspace*{-5pt}
-\section{PUBLICATIONS}
-
-{\large\textbf{Conference Papers}}
-
-\begin{itemize}[leftmargin=*] \itemsep 0pt
-%\vspace*{-5pt}
-	\item Wenzhi Cui, Chen Qian\\
-          \href{http://arxiv.org/pdf/1403.8065.pdf}{Scalable and Load-balanced Data Center Multicast}\\
-          \textit{Globecom 2015}
-
-	\item Wenzhi Cui, Chen Qian\\
-          \href{http://www.cs.uky.edu/~qian/papers/DiFS.pdf}{DiFS: Distributed Flow Scheduling for Adaptive Routing in Hierarchical Data Center Networks}\\
-          \textit{ANCS 2014}
-\end{itemize}
-
-%----------------------------------------------------------------------------------------
 %	SELECTED PROJECTS SECTION
 %---------------------------------------------------------------------------------------- 
 
@@ -147,15 +181,12 @@ B.S., Software Engineering
 {\large\textbf{The University of Texas at Austin (\textit{Graduate})}}\\
 
 \vspace*{-7pt}
-{\large\textit{High-Performance Runtime Support}} \hfill\textit{8/2014-present}\\
-
-\vspace*{-7pt}
-Compiler/Runtime Support for Dataflow Programming in Scalable Machine Learning \hfill(Ongoing)\\
+ LLVM-based Instrumentationa and Profiling for CUDA programs\\
 \vspace*{-10pt}
 \begin{itemize}[leftmargin=*] \itemsep -3pt
 \vspace*{-5pt}
-	\item Characterizing the hardware/software implications of the dataflow programming models used in scalable machine learning systems such as Tensorflow
-	\item (Future work) Developing modularized compiler and runtime optimization passes for scalable dataflow programming on hetergeneous hardware platform
+	\item Instrumentation Framework for CUDA device kernels and host applications
+  \item Profiling tools for conditional branch divergence and memory divergence analysis in the runtime
 \end{itemize}
 
 \medskip
@@ -169,7 +200,6 @@ Deconstructing Tail Latencies with Event-Dependence Graphs in Managed Runtimes (
 	\item Demonstrated how to alleviate the tail latency by applying frequency boosting during garbage collection and carefully tuning garbage collector parameters
 \end{itemize}
 
-\pagebreak
 \medskip
 Static Analysis on C/C++ Pointers Bounds Checking\\
 \vspace*{-10pt}
@@ -201,30 +231,6 @@ DLX Instruction Set Prototype on FPGA \hfill(\textit{03/2013-08/2013})\\
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
-%	INTERN EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-\section{INTERN\\ EXPERIENCE} 
-
-{\textbf{IBM Research Austin}} \hfill{Summer 2015}\\
-\vspace*{-10pt}
-\begin{itemize}[leftmargin=*] \itemsep -3pt
-\vspace*{-5pt}
-	\item Analyzed the HTTP request latency distribution of web servers in data centers
-	\item Proposed an end-host based load balancing scheme by offloading HTTP requests
-	\item Implemented a prototype in OpenVSwitch
-\end{itemize}
-
-\medskip
-{\textbf{University of Queensland}} \hfill{Winter 2012}\\
-\vspace*{-10pt}
-\begin{itemize}[leftmargin=*] \itemsep -3pt
-\vspace*{-5pt}
-	\item Studied the query optimizer of MongoDB database
-	\item Tweaked MongoDB Query Optimizer to achieve better performance 
-\end{itemize}
-
-%----------------------------------------------------------------------------------------
 %	TEACHING EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
@@ -237,6 +243,7 @@ DLX Instruction Set Prototype on FPGA \hfill(\textit{03/2013-08/2013})\\
 	\item Upper Division, Programming Languages: Honor
 	\item Upper Division, Principles of Computer Systems
 	\item Upper Division, Computer Networks
+	\item Graduate, Code Generation and Optimization
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
@@ -255,6 +262,7 @@ DLX Instruction Set Prototype on FPGA \hfill(\textit{03/2013-08/2013})\\
 	\item Natural Language Processing (with Prof. Raymond J. Mooney)
 	\item Program Verification (with Prof. Thomas Dillig)
 	\item Programming Languages (with Prof. William Cook)
+	\item Computer Graphics (with Prof. Donald S. Fussell)
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
