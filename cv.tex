@@ -54,12 +54,11 @@
 
 \begin{minipage}{0.5\linewidth}
   \flushleft
-  The University of Texas at Austin \\
-  Computer Science\\
+  Google LLC \\
 \end{minipage}
 \begin{minipage}{0.5\linewidth}
   \flushright
-  \texttt{wc8348@cs.utexas.edu} \\
+  \texttt{cwz920716@gmail.com} \\
 \end{minipage}
 
 %----------------------------------------------------------------------------------------
@@ -71,9 +70,9 @@
 %----------------------------------------------------------------------------------------
 
 \vspace*{-5pt}
-\section{RESEARCH\\ INTERESTS} 
+\section{SUMMARY} 
 
-I am interested in building high-performance, energy-efficient computer systems. My past projects focus on developing advanced compiler and runtime support for emerging programming models and hardware platforms, such as GPGPU and Node.js.
+I am interested in building high-performance, energy-efficient computer systems. My past projects focus on developing advanced compiler and runtime support for emerging programming models and hardware platforms, such as GPGPU and Pixel Visual Core (PVC).
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -82,9 +81,8 @@ I am interested in building high-performance, energy-efficient computer systems.
 %\vspace*{-5pt}
 \section{EDUCATION}
 
-\textbf{The University of Texas at Austin} \hfill\textit{2014-present}\\
-M.S. student, Computer Science\\
-Expected Graduation Date: 2018-05\\
+\textbf{The University of Texas at Austin} \hfill\textit{2014-2018}\\
+M.S., Computer Science\\
 
 \vspace*{-5pt}
 \textbf{Nanjing University, Nanjing, China} \hfill\textit{2010-2014}\\
@@ -99,7 +97,7 @@ B.S., Software Engineering
 \vspace*{-1pt}
 \begin{itemize}[leftmargin=*] \itemsep -4pt
 	\item Programming Languages: C/C++, Cuda, Java, JavaScript, Python
-	\item System Software: LLVM, Node.js, Halide, Coq
+	\item System Software: Halide, LLVM, Node.js, Coq
 	\item Hardware Description Language: Verilog, Bluespec Verilog
 \end{itemize}
 
@@ -107,33 +105,54 @@ B.S., Software Engineering
 %	INTERN EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\section{INTERN\\ EXPERIENCE}
+\section{WORK\\ EXPERIENCE}
 
-{\textbf{Google}} \hfill{Summer 2018}\\
+{\textbf{Google Full-time}} \hfill{06/2018 - present}\\
 \vspace*{-10pt}
 \begin{itemize}[leftmargin=*] \itemsep -3pt
 \vspace*{-5pt}
-	\item Compiler Support for consumer hardware on mobile platform
-  \item Runtime Extension for Image Processing Applications in Halide
+	\item Compiler/runtime support for new hardware/language features on Pixel Visual Core
+	\item Add compiler features to assit application teams in porting emerging applications to PVC
+	\item Improve PVC compiler infrastucture reliability and performance via fixing critical bugs and refactoring compiler code base.
 \end{itemize} 
+
+\medskip
+{\textbf{Graduate Research Assistant (GRA)}} \hfill{2017 - 2018}\\
+\vspace*{-10pt}
+\begin{itemize}[leftmargin=*] \itemsep -3pt
+\vspace*{-5pt}
+	\item LLVM based instrumentation Framework for CUDA device kernels and host applications
+	\item Profile conditional branch divergence and memory divergence analysis on GPGPU
+	\item Profile GPU/CPU/Battery power on drone applications on NVIDIA Tegra TX2
+\end{itemize}
+
+\medskip
+{\textbf{Google Intern}} \hfill{Summer 2017}\\
+\vspace*{-10pt}
+\begin{itemize}[leftmargin=*] \itemsep -3pt
+\vspace*{-5pt}
+	\item Compiler/runtime support for advanced hardware features on Pixel Visual Core (PVC)
+	\item Halide library for image applications (Transpose, Rectification, etc.) on PVC
+\end{itemize}
+ 
+\medskip
+{\textbf{Graduate Research Assistant (GRA)}} \hfill{2016 - 2017}\\
+\vspace*{-10pt}
+\begin{itemize}[leftmargin=*] \itemsep -3pt
+\vspace*{-5pt}
+	\item Develope a program profiling technique called the "Event Dependence Graph" (EDG) to deconstruct the server response time of event-driven applications such as Node.js
+	\item Use EDG to characterize the tail latency of Node.js application and identified JavaScript garbage collector as a dominant root cause for the Node.js tail
+	\item Demonstrate how to alleviate the tail latency by applying frequency boosting during garbage collection and carefully tuning garbage collector parameters
+\end{itemize}
 
 \medskip
 {\textbf{IBM Research Austin}} \hfill{Summer 2015}\\
 \vspace*{-10pt}
 \begin{itemize}[leftmargin=*] \itemsep -3pt
 \vspace*{-5pt}
-	\item Analyzed the HTTP request latency distribution of web servers in data centers
-	\item Proposed an end-host based load balancing scheme by offloading HTTP requests
-	\item Implemented a prototype in OpenVSwitch
-\end{itemize}
-
-\medskip
-{\textbf{University of Queensland}} \hfill{Winter 2012}\\
-\vspace*{-10pt}
-\begin{itemize}[leftmargin=*] \itemsep -3pt
-\vspace*{-5pt}
-	\item Studied the query optimizer of MongoDB database
-	\item Tweaked MongoDB Query Optimizer to achieve better performance 
+	\item Analyze the HTTP request latency distribution of web servers in data centers
+	\item Design an end-host based load balancing scheme by offloading HTTP requests
+	\item Implemente a prototype in OpenVSwitch
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
@@ -145,9 +164,13 @@ B.S., Software Engineering
 
 {\large\textbf{Conference Papers}}
 
-\begin{itemize}[leftmargin=*] \itemsep 0pt
+\begin{itemize}[leftmargin=*] \itemsep -3pt
 %\vspace*{-5pt}
-  \item Nadav Chachmon, Daniel Richins, Robert Cohn, Magnus Christensson, Wenzhi Cui, Vijay Janapa Reddi
+	\item Behzad Boroujerdian, Hasan Genc, Srivatsan Krishnan, Wenzhi Cui, Aleksandra Faust, Vijay Janapa Reddi\\
+          \href{https://edge.seas.harvard.edu/files/zad-18-micro-mavbench.pdf}{MAVBench: Micro Aerial Vehicle Benchmarking}\\
+          \textit{MICRO 2016}
+
+	\item Nadav Chachmon, Daniel Richins, Robert Cohn, Magnus Christensson, Wenzhi Cui, Vijay Janapa Reddi\\
           \href{http://3nity.io/~vj/downloads/publications/sae16ics.pdf}{Simulation and Analysis Engine for Scale-Out Workloads}\\
           \textit{ICS 2016}
 
@@ -158,6 +181,18 @@ B.S., Software Engineering
 	\item Wenzhi Cui, Chen Qian\\
           \href{http://www.cs.uky.edu/~qian/papers/DiFS.pdf}{DiFS: Distributed Flow Scheduling for Adaptive Routing in Hierarchical Data Center Networks}\\
           \textit{ANCS 2014}
+\end{itemize}
+
+{\large\textbf{Patents}}
+
+\begin{itemize}[leftmargin=*] \itemsep -3pt
+%\vspace*{-5pt}
+	\item Kanak B. Agarwal, Wenzhi Cui, Wesley Felter, Yu Gu, Eric Rozner\\
+	  \href{https://patents.google.com/patent/US20180159922A1}{Job assignment using artificially delayed responses in load balanced groups}\\
+	\item Kanak B. Agarwal, Wenzhi Cui, Wesley Felter, Yu Gu, Eric Rozner\\
+	  \href{https://patents.google.com/patent/US20180157539A1}{Tail latency-based job offloading in load-balanced groups}\\
+	\item Kanak B. Agarwal, Wenzhi Cui, Wesley Felter, Yu Gu, Eric Rozner\\
+	  \href{https://patents.google.com/patent/US20180159775A1}{Offloading at a virtual switch in a load-balanced group}\\
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
@@ -176,70 +211,17 @@ B.S., Software Engineering
 %	SELECTED PROJECTS SECTION
 %---------------------------------------------------------------------------------------- 
 
-\section{SELECTED\\ PROJECTS}
+\section{COURSEWORK\\ PROJECTS}
 
-{\large\textbf{The University of Texas at Austin (\textit{Graduate})}}\\
+{\large\textbf{Misc.}}
 
-\vspace*{-7pt}
- LLVM-based Instrumentationa and Profiling for CUDA programs\\
-\vspace*{-10pt}
 \begin{itemize}[leftmargin=*] \itemsep -3pt
 \vspace*{-5pt}
-	\item Instrumentation Framework for CUDA device kernels and host applications
-  \item Profiling tools for conditional branch divergence and memory divergence analysis in the runtime
-  \item (Ongoing) Perform launch time optimizations such as constant propagation, loop unrolling, etc.
-\end{itemize}
-
-\medskip
-\vspace*{-7pt}
-\href{http://www.cs.utexas.edu/~wc8348/cs384g/draw.html}{OpenGL Based Cloth Simulation}\\
-\vspace*{-10pt}
-\begin{itemize}[leftmargin=*] \itemsep -3pt
-\vspace*{-5pt}
-	\item Implemented a mass-spring model to simulate cloth dynamics, such as partical interation and damping forces
-	\item Simulated the interaction between cloth and rigid body objects. We implemented box, sphere and triangle in our scene and created a collision detection method for each of the object.
-	\item Used OpenGL to render the scene in real-time. Video demos are available \href{https://www.youtube.com/playlist?list=PLhg5e7MedlDPsw6D1Lg_bPupiMRJJ9fnm&disable_polymer=true}{online}.
-\end{itemize}
-
-\medskip
-\vspace*{-7pt}
-Deconstructing Tail Latencies with Event-Dependence Graphs in Managed Runtimes (Node.js)\\
-\vspace*{-10pt}
-\begin{itemize}[leftmargin=*] \itemsep -3pt
-\vspace*{-5pt}
-	\item Developed a program profiling technique called the "Event Dependence Graph" (EDG) to deconstruct the server response time of event-driven applications such as Node.js
-	\item Used EDG to characterize the tail latency of Node.js application and identified JavaScript garbage collector as a dominant root cause for the Node.js tail
-	\item Demonstrated how to alleviate the tail latency by applying frequency boosting during garbage collection and carefully tuning garbage collector parameters
-\end{itemize}
-
-\medskip
-Static Analysis on C/C++ Pointers Bounds Checking\\
-\vspace*{-10pt}
-\begin{itemize}[leftmargin=*] \itemsep -3pt
-\vspace*{-5pt}
-	\item Designed and implemented an analysis pass in the LLVM compiler to determine C/C++ pointer bounds at compile time
-	\item Integrated static analysis with Softbound, a compile-time transformation for enforcing spatial safety of C/C++ pointers, to balance performance and coverage
-\end{itemize}
-
-\medskip
-Parallel Asynchronous Recursive Copy on SSD\\
-\vspace*{-10pt}
-\begin{itemize}[leftmargin=*] \itemsep -3pt
-\vspace*{-5pt}
-	\item Characterized the performance of copy command in the Linux Shell for large-volume directories on Solid State Drive
-	\item Implemented a prototype which utilizes parallel execution and asynchronous IO to speed up the recursive copy operation
-\end{itemize}
-
-\bigskip
-{\large\textbf{Nanjing University (\textit{Undergraduate})}}\\
-
-\vspace*{-7pt}
-DLX Instruction Set Prototype on FPGA \hfill(\textit{03/2013-08/2013})\\
-\vspace*{-10pt}
-\begin{itemize}[leftmargin=*] \itemsep -3pt
-\vspace*{-5pt}
-	\item Designed a multi-cycle DLX (simplified MIPS) microprocessor using Verilog
-	\item Extended MMU and added circuit support for connecting keyboard and monitor
+	\item Verify the correctness of (simplified) mark-sweep garbage collector using Coq
+	\item Implemente an analysis pass in the LLVM compiler to determine C/C++ pointer bounds and integrate with Softbound, a compiler transformation pass for enforcing spatial safety of C/C++ pointers
+	\item \href{http://www.cs.utexas.edu/~wc8348/cs384g/draw.html}{OpenGL Based Cloth Simulation using mass-spring model}
+	\item Utilize parallel execution and asynchronous IO to speed up the recursive copy operation on SSD
+	\item Implement a multi-cycle DLX (simplified MIPS) microprocessor using Verilog
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
@@ -252,10 +234,8 @@ DLX Instruction Set Prototype on FPGA \hfill(\textit{03/2013-08/2013})\\
 \vspace*{-5pt}
 \begin{itemize}[leftmargin=*] \itemsep -2pt
 \vspace*{-5pt}
-	\item Upper Division, Programming Languages: Honor
-	\item Upper Division, Principles of Computer Systems
-	\item Upper Division, Computer Networks
-	\item Graduate, Code Generation and Optimization
+	\item Undergraduate: Programming Languages(Honor), Principles of Computer Systems, Computer Networks
+	\item Graduate: Code Generation and Optimization
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
@@ -265,17 +245,7 @@ DLX Instruction Set Prototype on FPGA \hfill(\textit{03/2013-08/2013})\\
 \section{COURSEWORK} 
 
 \vspace*{-2pt}
-\begin{itemize}[leftmargin=*] \itemsep -2pt
-	\item Computer Architecture (with Prof. Yale N. Patt)
-	\item Compilers (with Prof. Calvin Lin)
-	\item Advanced Operating Systems (with Prof. Emmett Witchel)
-	\item Algorithms: Techniques/Theory (with Prof. Vijaya Ramachandran)
-	\item Formal Verification and Semantics (with Prof. E. A. Emerson)
-	\item Natural Language Processing (with Prof. Raymond J. Mooney)
-	\item Program Verification (with Prof. Thomas Dillig)
-	\item Programming Languages (with Prof. William Cook)
-	\item Computer Graphics (with Prof. Donald S. Fussell)
-\end{itemize}
+	Computer Architecture, Compilers, Advanced Operating Systems, Algorithms: Techniques/Theory, Formal Verification and Semantics, Natural Language Processing, Program Verification, Hardware Verification, Programming Languages, Computer Graphics, Physical Simulation
 
 %----------------------------------------------------------------------------------------
 
